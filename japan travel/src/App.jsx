@@ -1,8 +1,35 @@
-import { useState } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import DefaultLayout from "../layouts/DefaultLayout";
+import HomePage from "../pages/HomePage";
+import RegionPage from "../pages/RegionPage";
+import DiscoverJapanPage from "../pages/DiscoverJapanPage";
+import PlanYourTripPage from "../pages/PlanYourTripPage";
 import "./App.css";
 
 function App() {
-  return <></>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route element={<DefaultLayout />}>
+          {/* Rotta per l'Homepage */}
+          <Route path="/" element={<HomePage />} />
+
+          {/* Rotta per la pagina di Scoperta del Giappone */}
+          <Route path="/scopri-giappone" element={<DiscoverJapanPage />} />
+
+          {/* Rotta per la pagina di Pianificazione del Viaggio */}
+          <Route path="/organizza-viaggio" element={<PlanYourTripPage />} />
+
+          {/* Rotta dinamica per le pagine delle regioni */}
+          <Route path="/regioni/:regionName" element={<RegionPage />} />
+
+          {/* Rotta per gestire i casi di "pagina non trovata" */}
+          <Route path="*" element={<h1>404: Pagina non trovata</h1>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;

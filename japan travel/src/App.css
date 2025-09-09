@@ -1,0 +1,46 @@
+:root {
+  --header-size: 12vh;
+  --color-1: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  color: var(--color);
+}
+
+header {
+  height: var(--header-size);
+}
+
+header a {
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  transition: transform 250ms ease;
+}
+
+header .header-logo {
+  width: calc(var(--header-size) + 40px);
+  height: calc(var(--header-size) - 20px);
+  border-radius: 1rem;
+  background-image: url(../img/logo-1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 200%;
+  border: 0px solid black;
+  /* box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.1), -4px -3px 3px rgb(255, 255, 255); */
+}
+
+header a:hover {
+  transform: scale(1.05);
+}

@@ -36,8 +36,8 @@ Questo è un elenco dei passaggi fondamentali per lo sviluppo del progetto. Puoi
 #### Fase 2: Setup e Struttura
 
 - [x] Creazione del progetto con Vite e installazione delle dipendenze necessarie (React Router, ecc.).
-- [ ] Definizione della struttura delle cartelle (`components`, `pages`, `assets`, ecc.).
-- [ ] Creazione dei componenti base (Header, Footer, ecc.).
+- [x] Definizione della struttura delle cartelle (`components`, `pages`, `assets`, ecc.).
+- [x] Creazione dei componenti base (Header, Footer, ecc.).
 
 #### Fase 3: Sviluppo della Homepage
 
