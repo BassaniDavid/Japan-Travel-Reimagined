@@ -7,7 +7,10 @@ const Homepage = () => {
       <section className="homepage DiscoverJapanPage">
         <div className=" p-5">
           <Link to="/scopri-giappone">
-            <h1 className="mb-5">scopri il Giappone</h1>
+            <div className="d-flex align-items-center justify-content-left mb-4">
+              <h1>scopri il Giappone</h1>
+              <img src="../img/homepage/japan.svg" alt="" />
+            </div>
             <p>
               Il Giappone è una terra di contrasti affascinanti, dove l'antica
               tradizione dei templi e dei giardini zen si fonde con la modernità
@@ -70,6 +73,7 @@ const Homepage = () => {
           src="../img/homepage/cloud-1.svg"
           alt="cloud"
         />
+        <img className="sun" src="../img/homepage/sun.svg" alt="sun" />
       </section>
 
       {/* sezione con mappa interattiva */}
@@ -2489,7 +2493,7 @@ const Homepage = () => {
                 y="180.82928"
                 transform="translate(0,297.36214)"
                 id="text5726"
-                xml:space="preserve"
+                xmlSpace="preserve"
                 style={{
                   fontSize: "30px",
                   fontStyle: "normal",

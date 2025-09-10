@@ -2,9 +2,9 @@
   --header-size: 12vh;
   --color-1: black;
   --color-2: white;
-  --background-col-1: rgb(46, 46, 46);
-  --background-col-header: rgb(84, 83, 83);
-  --background-col-2: rgb(255, 255, 255);
+  --col-3: rgb(40, 43, 48);
+  --col-4: rgb(23, 28, 33);
+  --background-col-header: rgb(83, 88, 88);
   --radius-img: 20px;
   --animation-img: 1s;
   --animation-svg: 7s;
@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: var(--background-col-1);
+  background-color: var(--col-3);
   color: var(--color-2);
 }
 
@@ -61,7 +61,8 @@ header a:hover {
 
 /* -----homepage----- */
 section.homepage {
-  background-color: var(--background-col-1);
+  background-color: var(--col-4);
+  padding: 2rem 0;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -73,12 +74,13 @@ section.homepage img {
   max-width: 45%;
 }
 
-section.homepage div {
+section.homepage > div {
   max-width: 55%;
 }
 
 section.homepage h1 {
   font-size: 3rem;
+  flex-shrink: 0;
 }
 
 section.homepage p {
@@ -167,6 +169,10 @@ button:active {
 }
 
 /* -----scopri il giappone----- */
+
+section.DiscoverJapanPage div img {
+  width: 15%;
+}
 
 section.DiscoverJapanPage img {
   border-top-left-radius: var(--radius-img);
@@ -316,11 +322,34 @@ section.PlanYourTripPage img {
   }
 }
 
-section.PlanYourTripPage img.cloud {
+section.PlanYourTripPage img.cloud,
+section.PlanYourTripPage img.sun {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0);
   border-radius: 0;
   z-index: 1;
+}
+
+section.PlanYourTripPage img.sun {
+  top: 5%;
+  right: 50%;
+  width: 60px;
+  height: 60px;
+  z-index: 0;
+  filter: drop-shadow(0 0 5px #ffbf00) drop-shadow(0 0 8px #ffbf00c0)
+    drop-shadow(0 0 15px #ffff7e70);
+  animation: sun 5s infinite alternate ease-in-out,
+    faid-in-svg var(--animation-svg) ease-in-out;
+}
+
+@keyframes sun {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: 10px;
+    fill: #ff0000;
+    stroke: none;
+  }
 }
 
 #cloud-1 {
@@ -328,13 +357,24 @@ section.PlanYourTripPage img.cloud {
   right: -18px;
   width: 120px;
   height: 120px;
+  animation: faid-in-svg var(--animation-svg) ease-in-out;
 }
 
 #cloud-2 {
-  top: 0;
+  top: 9.5%;
   right: 50%;
   width: 40px;
   height: 40px;
+  animation: cloud-2 2.8s infinite alternate ease-in-out,
+    faid-in-svg var(--animation-svg) ease-in-out;
+}
+@keyframes cloud-2 {
+  from {
+    translate: 0;
+  }
+  to {
+    translate: 10px;
+  }
 }
 
 #cloud-3 {
@@ -343,10 +383,11 @@ section.PlanYourTripPage img.cloud {
   width: 26px;
   height: 26px;
   z-index: 3;
-  animation: cloud 6s infinite ease-in-out;
+  animation: cloud-3 6s infinite ease-in-out,
+    faid-in-svg var(--animation-svg) ease-in-out;
 }
 
-@keyframes cloud {
+@keyframes cloud-3 {
   0% {
     transform: translate(0px, 0px);
   }
