@@ -82,17 +82,12 @@ section.homepage > div {
 section.homepage h1 {
   font-size: 3rem;
   flex-shrink: 0;
+  text-shadow: 0 0 5px black;
 }
 
 section.homepage p {
   font-size: 1.3rem;
   margin-bottom: 2.5rem;
-}
-
-section.homepage h1 {
-  position: relative;
-  text-shadow: 0 0 5px black;
-  z-index: 2;
 }
 
 /* button */
