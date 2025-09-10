@@ -7,7 +7,7 @@
   --background-col-2: rgb(255, 255, 255);
   --radius-img: 20px;
   --animation-img: 1s;
-  --animation-flower: 7s;
+  --animation-svg: 7s;
 }
 
 body {
@@ -82,7 +82,15 @@ section.homepage h1 {
 section.homepage p {
   font-size: 1.3rem;
 }
+
+section.homepage h1 {
+  position: relative;
+  text-shadow: 0 0 5px black;
+  z-index: 1;
+}
+
 /* -----scopri il giappone----- */
+
 section.DiscoverJapanPage img {
   border-top-left-radius: var(--radius-img);
   border-bottom-left-radius: var(--radius-img);
@@ -118,8 +126,8 @@ section.DiscoverJapanPage img.flower {
   left: 55%;
   width: 30px;
   height: 30px;
-  animation: faid-in-svg var(--animation-flower),
-    wind-flower-1 var(--animation-flower) infinite ease-in-out;
+  animation: faid-in-svg var(--animation-svg),
+    wind-flower-1 var(--animation-svg) infinite ease-in-out;
   z-index: 1;
 }
 
@@ -128,8 +136,8 @@ section.DiscoverJapanPage img.flower {
   left: 55%;
   width: 30px;
   height: 30px;
-  animation: faid-in-svg var(--animation-flower),
-    wind-flower-2 var(--animation-flower) infinite ease-in-out;
+  animation: faid-in-svg var(--animation-svg),
+    wind-flower-2 var(--animation-svg) infinite ease-in-out;
   z-index: 1;
 }
 
@@ -145,26 +153,6 @@ section.DiscoverJapanPage img.flower {
   }
 }
 
-@keyframes wind-flower-2 {
-  0% {
-    top: 20%;
-    left: 55%;
-  }
-  35% {
-    top: 45%;
-    left: 20%;
-  }
-  70% {
-    top: 70%;
-    left: 55%;
-    rotate: 180deg;
-  }
-  100% {
-    top: 20%;
-    left: 55%;
-  }
-}
-
 @keyframes wind-flower-1 {
   0% {
     top: 10%;
@@ -176,7 +164,7 @@ section.DiscoverJapanPage img.flower {
   }
   50% {
     top: 60%;
-    left: 55%;
+    left: 65%;
     rotate: 270deg;
   }
   100% {
@@ -185,11 +173,24 @@ section.DiscoverJapanPage img.flower {
   }
 }
 
-#flower-2 {
-  top: 0;
-  left: 10%;
-  width: 30px;
-  height: 30px;
+@keyframes wind-flower-2 {
+  0% {
+    top: 20%;
+    left: 55%;
+  }
+  35% {
+    top: 45%;
+    left: 20%;
+  }
+  70% {
+    top: 70%;
+    left: 60%;
+    rotate: 180deg;
+  }
+  100% {
+    top: 20%;
+    left: 55%;
+  }
 }
 
 /* -----programma il tuo viaggio----- */
@@ -201,10 +202,7 @@ section.PlanYourTripPage img {
 
 section.PlanYourTripPage div,
 section.PlanYourTripPage img {
-  animation-name: fade-in-right;
-  animation-duration: var(--animation-s);
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: forwards;
+  animation: fade-in-right var(--animation-img) ease-in-out;
 }
 
 @keyframes fade-in-right {
@@ -227,7 +225,8 @@ section.PlanYourTripPage img {
   background-color: rgba(0, 0, 0, 0);
   border-radius: 0;
   z-index: 1;
-  animation: fly 5s infinite linear;
+  animation: fly 5s infinite linear,
+    faid-in-svg var(--animation-svg) ease-in-out;
 }
 
 @keyframes fly {

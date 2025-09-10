@@ -3,6 +3,7 @@ import { NavLink, Link } from "react-router-dom";
 const Homepage = () => {
   return (
     <main>
+      {/* scopri il Giappone */}
       <section className="homepage DiscoverJapanPage">
         <div className=" p-5">
           <Link to="/">
@@ -31,6 +32,8 @@ const Homepage = () => {
         />
         <img className="" src="../img/homepage/japan.webp" alt="" />
       </section>
+
+      {/* programma il tuo viaggio */}
       <section className="homepage PlanYourTripPage">
         <img className="" src="../img/homepage/japan.webp" alt="" />
         <div className=" p-5">
