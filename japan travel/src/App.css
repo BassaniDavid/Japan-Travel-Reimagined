@@ -1,10 +1,10 @@
 :root {
   --header-size: 12vh;
-  --color-1: black;
-  --color-2: white;
+  --col-1: black;
+  --col-2: white;
   --col-3: rgb(40, 43, 48);
   --col-4: rgb(23, 28, 33);
-  --background-col-header: rgb(83, 88, 88);
+  --col-5: rgb(139, 174, 210);
   --radius-img: 20px;
   --animation-img: 1s;
   --animation-svg: 7s;
@@ -17,7 +17,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: var(--col-3);
-  color: var(--color-2);
+  color: var(--col-2);
 }
 
 main {
@@ -26,14 +26,15 @@ main {
 
 header {
   height: var(--header-size);
-  background-color: var(--background-col-header);
+  background-color: var(--col-4);
   margin-bottom: var(--margin-bottom);
+  box-shadow: 0 0px 20px 8px black;
 }
 
 header a,
 section.homepage a {
   text-decoration: none;
-  color: var(--color-2);
+  color: var(--col-2);
 }
 
 header a {
@@ -400,7 +401,7 @@ section.PlanYourTripPage img.sun {
 section.RegionPage div {
   height: calc(100vh - var(--header-size));
   width: calc(80vh - var(--header-size));
-  background-color: var(--color-2);
+  background-color: var(--col-5);
   padding: 1rem;
   border-radius: var(--radius-img);
   resize: both;
