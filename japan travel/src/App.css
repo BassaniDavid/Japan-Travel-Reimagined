@@ -8,6 +8,7 @@
   --radius-img: 20px;
   --animation-img: 1s;
   --animation-svg: 7s;
+  --margin-bottom: 7rem;
 }
 
 body {
@@ -25,6 +26,7 @@ main {
 header {
   height: var(--header-size);
   background-color: var(--background-col-header);
+  margin-bottom: var(--margin-bottom);
 }
 
 header a,
@@ -63,7 +65,7 @@ section.homepage {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: var(--margin-bottom);
   position: relative;
 }
 
@@ -81,12 +83,87 @@ section.homepage h1 {
 
 section.homepage p {
   font-size: 1.3rem;
+  margin-bottom: 2.5rem;
 }
 
 section.homepage h1 {
   position: relative;
   text-shadow: 0 0 5px black;
-  z-index: 1;
+  z-index: 2;
+}
+
+/* button */
+button {
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 1px solid rgb(61, 106, 255);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background: transparent;
+  color: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  background: rgb(61, 106, 255);
+  box-shadow: 0 0 15px 2px rgba(0, 142, 236, 0.815);
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+button:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+
+button::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+button:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
 }
 
 /* -----scopri il giappone----- */
@@ -234,7 +311,7 @@ section.PlanYourTripPage img {
     left: 40%;
   }
   100% {
-    top: 0;
+    top: 5%;
     left: 95%;
   }
 }
@@ -248,9 +325,9 @@ section.PlanYourTripPage img.cloud {
 
 #cloud-1 {
   top: 0;
-  right: 10px;
-  width: 80px;
-  height: 80px;
+  right: -18px;
+  width: 120px;
+  height: 120px;
 }
 
 #cloud-2 {
@@ -265,4 +342,31 @@ section.PlanYourTripPage img.cloud {
   right: 20%;
   width: 26px;
   height: 26px;
+  z-index: 3;
+  animation: cloud 6s infinite ease-in-out;
+}
+
+@keyframes cloud {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(-5px, 15px);
+    scale: 0.96;
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+/* sezione con mappa */
+
+section.RegionPage div {
+  height: calc(100vh - var(--header-size));
+  width: calc(80vh - var(--header-size));
+  background-color: var(--color-2);
+  padding: 1rem;
+  border-radius: var(--radius-img);
+  resize: both;
+  overflow: auto;
 }
