@@ -8,6 +8,7 @@
   --radius-img: 20px;
   --animation-img: 1s;
   --animation-svg: 7s;
+  --sun-animation: 60s;
   --margin-bottom: 7rem;
 }
 
@@ -337,18 +338,16 @@ section.PlanYourTripPage img.sun {
   z-index: 0;
   filter: drop-shadow(0 0 5px #ffbf00) drop-shadow(0 0 8px #ffbf00c0)
     drop-shadow(0 0 15px #ffff7e70);
-  animation: sun 5s infinite alternate ease-in-out,
+  animation: sun var(--sun-animation) infinite linear,
     faid-in-svg var(--animation-svg) ease-in-out;
 }
 
 @keyframes sun {
   from {
-    translate: 0;
+    rotate: 0deg;
   }
   to {
-    translate: 10px;
-    fill: #ff0000;
-    stroke: none;
+    rotate: 360deg;
   }
 }
 
@@ -361,11 +360,12 @@ section.PlanYourTripPage img.sun {
 }
 
 #cloud-2 {
-  top: 9.5%;
+  top: 9%;
   right: 50%;
-  width: 40px;
-  height: 40px;
-  animation: cloud-2 2.8s infinite alternate ease-in-out,
+  width: 45px;
+  height: 45px;
+  animation: cloud-2 calc(var(--animation-svg) / 2) infinite alternate
+      ease-in-out,
     faid-in-svg var(--animation-svg) ease-in-out;
 }
 @keyframes cloud-2 {
@@ -373,7 +373,7 @@ section.PlanYourTripPage img.sun {
     translate: 0;
   }
   to {
-    translate: 10px;
+    translate: 15px;
   }
 }
 
@@ -410,4 +410,8 @@ section.RegionPage div {
   border-radius: var(--radius-img);
   resize: both;
   overflow: auto;
+}
+
+section.RegionPage.homepage {
+  margin-bottom: 0;
 }
