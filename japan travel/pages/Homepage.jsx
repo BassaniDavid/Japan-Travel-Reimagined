@@ -1,6 +1,6 @@
 import { NavLink, Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import regionMapData from "../data/regionMapData.js";
+import regionMapData from "../data/homepage/regionMapData.js";
 import RegionMapCard from "../components/RegionMapCard";
 
 const Homepage = () => {

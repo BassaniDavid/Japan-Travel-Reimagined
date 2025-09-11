@@ -41,24 +41,12 @@ Questo è un elenco dei passaggi fondamentali per lo sviluppo del progetto. Puoi
 
 #### Fase 3: Sviluppo della Homepage
 
-- [ ] Sviluppo della sezione **"Scopri il Giappone"**: creazione di una sezione introduttiva che rimanda a una pagina dedicata con informazioni generali su storia, cultura, cibo, ecc.
-- [ ] Sviluppo della **mappa interattiva**: integrazione della mappa SVG del Giappone, implementazione dell'effetto hover per ogni regione e sviluppo della logica di stato per visualizzare il nome della regione al passaggio del mouse. Al click sulla regione, l'utente sarà reindirizzato alla pagina specifica di quella regione utilizzando React Router.
-- [ ] Sviluppo della sezione **"Organizza il Viaggio"**: creazione di una sezione che indirizza a una pagina con consigli pratici su alloggi, trasporti, visti e budget.
-- [ ] Collegamento delle regioni della mappa alle rispettive pagine di dettaglio utilizzando React Router.
+- [x] Sviluppo della sezione **"Scopri il Giappone"**: creazione di una sezione introduttiva che rimanda a una pagina dedicata con informazioni generali su storia, cultura, cibo, ecc.
+- [x] Sviluppo della sezione **"Programma il Viaggio"**: creazione di una sezione che indirizza a una pagina con consigli pratici su alloggi, trasporti, visti e budget.
+- [x] Sviluppo della **mappa interattiva**: integrazione della mappa SVG del Giappone, implementazione dell'effetto hover per ogni regione e sviluppo della logica di stato per visualizzare il nome della regione al passaggio del mouse. Al click sulla regione, l'utente sarà reindirizzato alla pagina specifica di quella regione utilizzando React Router.
+- [x] Collegamento delle regioni della mappa alle rispettive pagine di dettaglio utilizzando React Router.
 
 #### Fase 4: Sviluppo delle Pagine Interne
-
-- [ ] Creazione di una pagina `RegionPage.jsx` generica, che fungerà da **template** per tutte le regioni. Questa pagina riceverà i dati della regione (es. Hokkaido, Kansai) tramite le rotte di React Router.
-- [ ] Implementazione delle seguenti sezioni all'interno della pagina `RegionPage.jsx`:
-
-  - [ ] **Storia e Cultura:** Dettagli sui luoghi storici, templi, tradizioni e festival unici della regione.
-  - [ ] **Città Principali:** Una panoramica delle città più importanti dell'area, con una breve descrizione e i punti di interesse.
-  - [ ] **Cibo:** Un'esplorazione delle specialità culinarie tipiche della regione (ad esempio, il ramen di Hokkaido o l'okonomiyaki di Osaka).
-  - [ ] **Cosa Fare:** Una sezione dedicata alle attività, ulteriormente suddivisa in:
-    - [ ] **Natura e Paesaggi:** Percorsi di trekking, giardini, parchi nazionali e punti panoramici.
-    - [ ] **Sport e Avventura:** Attività come sci (in Hokkaido), escursioni in bicicletta o sport acquatici.
-    - [ ] **Relax e Benessere:** Esperienze uniche come gli **onsen** (sorgenti termali), le spa e le cerimonie tradizionali di rilassamento.
-    - [ ] **Vita Notturna e Divertimento:** Guida a bar, pub, e aree di intrattenimento tipiche della regione.
 
 - [ ] Creazione di una pagina `DiscoverJapanPage.jsx` con le informazioni generali su:
 
@@ -72,6 +60,17 @@ Questo è un elenco dei passaggi fondamentali per lo sviluppo del progetto. Puoi
   - [ ] Trasporti
   - [ ] Visti e Documenti
   - [ ] Budget e Consigli Utili
+- [x] Creazione di una pagina `RegionPage.jsx` generica, che fungerà da **template** per tutte le regioni. Questa pagina riceverà i dati della regione (es. Hokkaido, Kansai) tramite le rotte di React Router.
+- [ ] Implementazione delle seguenti sezioni all'interno della pagina `RegionPage.jsx`:
+
+  - [ ] **Storia e Cultura:** Dettagli sui luoghi storici, templi, tradizioni e festival unici della regione.
+  - [ ] **Città Principali:** Una panoramica delle città più importanti dell'area, con una breve descrizione e i punti di interesse.
+  - [ ] **Cibo:** Un'esplorazione delle specialità culinarie tipiche della regione (ad esempio, il ramen di Hokkaido o l'okonomiyaki di Osaka).
+  - [ ] **Cosa Fare:** Una sezione dedicata alle attività, ulteriormente suddivisa in:
+    - [ ] **Natura e Paesaggi:** Percorsi di trekking, giardini, parchi nazionali e punti panoramici.
+    - [ ] **Sport e Avventura:** Attività come sci (in Hokkaido), escursioni in bicicletta o sport acquatici.
+    - [ ] **Relax e Benessere:** Esperienze uniche come gli **onsen** (sorgenti termali), le spa e le cerimonie tradizionali di rilassamento.
+    - [ ] **Vita Notturna e Divertimento:** Guida a bar, pub, e aree di intrattenimento tipiche della regione.
 
 #### Fase 5: Finalizzazione e Rifinitura
 

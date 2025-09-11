@@ -7,6 +7,8 @@ import DiscoverJapanPage from "../pages/DiscoverJapanPage";
 import PlanYourTripPage from "../pages/PlanYourTripPage";
 import "./App.css";
 
+import HistoryPage from "../pages/discoverJapanPages/HystoryPage";
+
 function App() {
   return (
     <BrowserRouter>
@@ -15,7 +17,11 @@ function App() {
           {/* Rotta per l'Homepage */}
           <Route path="/" element={<HomePage />} />
 
-          {/* Rotta per la pagina di Scoperta del Giappone */}
+          {/* Rotte per le pagine di Scoperta del Giappone */}
+          <Route path="/scopri-giappone" element={<DiscoverJapanPage />} />
+          <Route path="/scopri-giappone/storia" element={<HistoryPage />} />
+          <Route path="/scopri-giappone" element={<DiscoverJapanPage />} />
+          <Route path="/scopri-giappone" element={<DiscoverJapanPage />} />
           <Route path="/scopri-giappone" element={<DiscoverJapanPage />} />
 
           {/* Rotta per la pagina di Pianificazione del Viaggio */}

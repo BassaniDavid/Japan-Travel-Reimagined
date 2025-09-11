@@ -4,9 +4,10 @@
   --col-2: white;
   --col-3: rgb(40, 43, 48);
   --col-4: rgb(23, 28, 33);
-  --col-5: rgb(110, 148, 186);
-  --col-6: rgb(142, 224, 146);
-  --col-7: rgb(210, 186, 107);
+  --col-5: rgb(111, 150, 209);
+  --col-6: rgb(146, 255, 151);
+  --col-7: rgb(255, 153, 0);
+  --col-8: rgb(255, 176, 74);
   --radius-img: 20px;
   --animation-img: 1s;
   --animation-svg: 7s;
@@ -422,6 +423,7 @@ section.RegionPage div.map {
 
 .region {
   fill: var(--col-6);
+  transition: fill 0.3s ease;
 }
 
 #hokkaido:hover,
@@ -434,16 +436,14 @@ section.RegionPage div.map {
 #kyushu:hover,
 #okinawa:hover {
   fill: var(--col-7);
-  transition: fill 0.3s ease;
 }
 
 #kansai:hover + #kansai-2 {
   fill: var(--col-7);
-  transition: fill 0.4s ease;
 }
 
 section.RegionPage div.map .region.active {
-  fill: var(--col-7);
+  fill: var(--col-8);
 }
 
 section.RegionPage div.region-details {
@@ -462,6 +462,11 @@ section.RegionPage .region-card img {
   max-height: 60%;
   margin: 2rem auto;
   border-radius: var(--radius-img);
+  transition: all 0.3s ease-out;
+}
+section.RegionPage .region-card img:hover {
+  scale: 1.01;
+  box-shadow: 0 0 10px rgb(119, 119, 119);
 }
 
 section.RegionPage .region-card button {
