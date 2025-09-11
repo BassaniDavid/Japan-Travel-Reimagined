@@ -12,6 +12,9 @@
   --animation-svg: 7s;
   --sun-animation: 60s;
   --margin-bottom: 7rem;
+  --font-header: 2rem;
+  --font-h2: 4rem;
+  --font-p: 1.7rem;
 }
 
 body {
@@ -21,6 +24,7 @@ body {
   background-color: var(--col-3);
   color: var(--col-2);
   overflow-x: hidden;
+  font-family: "Zain", Courier, monospace;
 }
 
 main {
@@ -41,7 +45,7 @@ section.homepage a {
 }
 
 header a {
-  font-size: 1.6rem;
+  font-size: var(--font-header);
   text-transform: capitalize;
   transition: transform 250ms ease;
 }
@@ -84,13 +88,13 @@ section.homepage > div {
 }
 
 section.homepage h2 {
-  font-size: 3rem;
+  font-size: var(--font-h2);
   flex-shrink: 0;
   text-shadow: 0 0 5px black;
 }
 
 section.homepage p {
-  font-size: 1.3rem;
+  font-size: var(--font-p);
   margin-bottom: 2.5rem;
 }
 
@@ -462,6 +466,9 @@ section.RegionPage .region-card img {
 
 section.RegionPage .region-card button {
   margin: 1vw;
+  font-family: none;
+  font-size: large;
+  padding: 0.7vw 1.5vw;
 }
 
 section.RegionPage > * {
