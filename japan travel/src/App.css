@@ -485,7 +485,7 @@ section.RegionPage > * {
 .discover-card {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 2rem;
+  margin-bottom: var(--margin-bottom);
   padding: 3rem 7rem;
   background-color: var(--col-4);
 }
@@ -521,4 +521,19 @@ section.RegionPage > * {
 a.discover-card-link {
   text-decoration: none;
   color: var(--col-2);
+}
+
+/* history page */
+.historical-card {
+  background-color: var(--col-4);
+  padding: 4rem 10rem;
+  margin-bottom: var(--margin-bottom);
+}
+
+.historical-card > * {
+  animation: fade-in-left var(--animation-img) ease-in-out;
+}
+
+.historical-card h2 {
+  margin-bottom: 2rem;
 }

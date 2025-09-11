@@ -12,6 +12,12 @@ const discoverJapan = [
     image: "../img/discoverJapan/cultura.png",
   },
   {
+    title: "Etichetta e Comportamento",
+    text: "Impara le regole non scritte del vivere in Giappone. Dalla corretta inclinazione del corpo ai gesti di cortesia e alle norme nei luoghi pubblici, un'introduzione essenziale per viaggiare con rispetto e interagire con la cultura locale in modo appropriato.",
+    path: "/scopri-giappone/comportamento",
+    image: "../img/discoverJapan/comportamento.png",
+  },
+  {
     title: "Cibo Giapponese",
     text: "Un’esperienza sensoriale che va oltre sushi e ramen. Immergiti nei sapori autentici della cucina giapponese, una fusione di estetica e ingredienti freschi, e scopri piatti regionali e segreti culinari.",
     path: "/scopri-giappone/cibo",

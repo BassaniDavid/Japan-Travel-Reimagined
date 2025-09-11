@@ -3,7 +3,7 @@ import HistoryCard from "../../components/HistoryCard";
 
 const HistoryPage = () => {
   return (
-    <main className="container">
+    <main>
       {history.map((period) => (
         <HistoryCard
           key={period.title}
