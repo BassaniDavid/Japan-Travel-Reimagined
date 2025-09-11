@@ -82,7 +82,7 @@ section.homepage > div {
   max-width: 55%;
 }
 
-section.homepage h1 {
+section.homepage h2 {
   font-size: 3rem;
   flex-shrink: 0;
   text-shadow: 0 0 5px black;
@@ -438,4 +438,26 @@ section.RegionPage div.map {
 
 section.RegionPage div.map .region.active {
   fill: var(--col-7);
+}
+
+section.RegionPage div.region-details {
+  width: 45%;
+}
+
+.region-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+section.homepage .region-card img {
+  max-width: 60%;
+  max-height: 60%;
+  margin: 2rem auto;
+  border-radius: var(--radius-img);
+}
+
+section.homepage .region-card button {
+  margin: 1vw;
 }

@@ -1,14 +1,42 @@
 import { NavLink, Link } from "react-router-dom";
 import { useState } from "react";
+import regionMapData from "../data/regionMapData.js";
+import RegionMapCard from "../components/RegionMapCard";
 
 const Homepage = () => {
-  const [activeRegionId, setActiveRegionId] = useState("hokkaido");
+  const [activeRegionIndex, setActiveRegionIndex] = useState(0);
+
+  const regionIds = [
+    "hokkaido",
+    "tohoku",
+    "kanto",
+    "chubu",
+    "kansai",
+    "chugoku",
+    "shikoku",
+    "kyushu",
+    "okinawa",
+  ];
+
+  const activeRegionId = regionIds[activeRegionIndex];
+  const activeRegionData = regionMapData[activeRegionId];
+
+  const handleNextClick = () => {
+    const nextIndex = (activeRegionIndex + 1) % regionIds.length;
+    setActiveRegionIndex(nextIndex);
+  };
+
+  const handlePrevClick = () => {
+    const prevIndex =
+      (activeRegionIndex - 1 + regionIds.length) % regionIds.length;
+    setActiveRegionIndex(prevIndex);
+  };
 
   const handleMouseEnter = (event) => {
     const targetElement = event.target.closest("path, g");
-
     if (targetElement && targetElement.id) {
-      setActiveRegionId(targetElement.id);
+      const index = regionIds.indexOf(targetElement.id);
+      setActiveRegionIndex(index);
     }
   };
 
@@ -19,7 +47,7 @@ const Homepage = () => {
         <div className=" p-5">
           <Link to="/scopri-giappone">
             <div className="d-flex align-items-center justify-content-left mb-4">
-              <h1>scopri il Giappone</h1>
+              <h2>scopri il Giappone</h2>
               <img src="../img/homepage/japan.svg" alt="" />
             </div>
             <p>
@@ -51,7 +79,7 @@ const Homepage = () => {
         <img className="" src="../img/homepage/japan-trip.jpg" alt="" />
         <div className=" p-5">
           <Link to="/organizza-viaggio">
-            <h1 className="mb-5">Programma il tuo viaggio</h1>
+            <h2 className="mb-5">Programma il tuo viaggio</h2>
             <p>
               Pronto a partire per il Giappone? Qui troverai tutti gli strumenti
               e le informazioni necessarie per pianificare il tuo itinerario
@@ -89,9 +117,12 @@ const Homepage = () => {
 
       {/* sezione con mappa interattiva */}
       <section className="homepage RegionPage">
-        <div>
-          <h1>esplora le regioni</h1>
-          <div className="RegionDetails">blablabla</div>
+        <div className="region-details">
+          <RegionMapCard
+            details={activeRegionData}
+            onPrevClick={handlePrevClick}
+            onNextClick={handleNextClick}
+          />
         </div>
         <div className="map">
           <svg
