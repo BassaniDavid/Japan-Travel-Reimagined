@@ -20,9 +20,15 @@ function App() {
           {/* Rotte per le pagine di Scoperta del Giappone */}
           <Route path="/scopri-giappone" element={<DiscoverJapanPage />} />
           <Route path="/scopri-giappone/storia" element={<HistoryPage />} />
-          <Route path="/scopri-giappone" element={<DiscoverJapanPage />} />
-          <Route path="/scopri-giappone" element={<DiscoverJapanPage />} />
-          <Route path="/scopri-giappone" element={<DiscoverJapanPage />} />
+          <Route
+            path="/scopri-giappone/cultura"
+            element={<DiscoverJapanPage />}
+          />
+          <Route path="/scopri-giappone/cibo" element={<DiscoverJapanPage />} />
+          <Route
+            path="/scopri-giappone/popculture"
+            element={<DiscoverJapanPage />}
+          />
 
           {/* Rotta per la pagina di Pianificazione del Viaggio */}
           <Route path="/organizza-viaggio" element={<PlanYourTripPage />} />

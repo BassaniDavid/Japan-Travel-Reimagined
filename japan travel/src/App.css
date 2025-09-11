@@ -88,13 +88,13 @@ section.homepage > div {
   max-width: 55%;
 }
 
-section.homepage h2 {
+h2 {
   font-size: var(--font-h2);
   flex-shrink: 0;
   text-shadow: 0 0 5px black;
 }
 
-section.homepage p {
+p {
   font-size: var(--font-p);
   margin-bottom: 2.5rem;
 }
@@ -478,4 +478,47 @@ section.RegionPage .region-card button {
 
 section.RegionPage > * {
   animation: faid-in-svg calc(var(--animation-svg) / 2);
+}
+
+/* sezione discover japan page */
+
+.discover-card {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  padding: 3rem 7rem;
+  background-color: var(--col-4);
+}
+
+.discover-card div {
+  animation: fade-in-left var(--animation-img) ease-in-out;
+}
+
+.discover-card div.image-container {
+  width: 20%;
+  border-radius: var(--radius-img);
+  overflow: hidden;
+}
+.discover-card div img {
+  width: 100%;
+  height: 100%;
+  scale: 1.5;
+  position: relative;
+  top: 10px;
+}
+
+.discover-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+
+.discover-content button {
+  margin: auto;
+}
+
+a.discover-card-link {
+  text-decoration: none;
+  color: var(--col-2);
 }

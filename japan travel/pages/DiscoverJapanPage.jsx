@@ -3,7 +3,7 @@ import DiscoverCard from "../components/DiscoverCard";
 
 const DiscoverJapanPage = () => {
   return (
-    <main className="container">
+    <main>
       {discoverJapan.map((data) => (
         <DiscoverCard key={data.title} info={data} />
       ))}
