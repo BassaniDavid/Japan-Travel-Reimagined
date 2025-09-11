@@ -20,6 +20,7 @@ body {
   box-sizing: border-box;
   background-color: var(--col-3);
   color: var(--col-2);
+  overflow-x: hidden;
 }
 
 main {
@@ -180,7 +181,8 @@ section.DiscoverJapanPage img {
 }
 
 section.DiscoverJapanPage div,
-section.DiscoverJapanPage img {
+section.DiscoverJapanPage img,
+section.RegionPage div {
   animation-name: fade-in-left;
   animation-duration: var(--animation-img);
   animation-timing-function: ease-in-out;
@@ -405,8 +407,8 @@ section.RegionPage.homepage {
 }
 
 section.RegionPage div.map {
-  height: calc(100vh - var(--header-size));
-  width: calc(80vh - var(--header-size));
+  height: calc(90vh - var(--header-size));
+  width: calc(75vh - var(--header-size));
   background-color: var(--col-5);
   padding: 1rem;
   border-radius: var(--radius-img);
@@ -451,13 +453,17 @@ section.RegionPage div.region-details {
   text-align: center;
 }
 
-section.homepage .region-card img {
+section.RegionPage .region-card img {
   max-width: 60%;
   max-height: 60%;
   margin: 2rem auto;
   border-radius: var(--radius-img);
 }
 
-section.homepage .region-card button {
+section.RegionPage .region-card button {
   margin: 1vw;
+}
+
+section.RegionPage > * {
+  animation: faid-in-svg calc(var(--animation-svg) / 2);
 }

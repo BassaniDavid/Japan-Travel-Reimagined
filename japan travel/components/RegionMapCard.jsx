@@ -10,7 +10,6 @@ const RegionMapCard = ({ details, onPrevClick, onNextClick }) => {
           <button onClick={onPrevClick}>&lt;</button>
           <img src={details.image} alt="" />
           <button onClick={onNextClick}>&gt;</button>
-          <h3>{details.title}</h3>
           <p>{details.description}</p>
         </div>
       ) : (
