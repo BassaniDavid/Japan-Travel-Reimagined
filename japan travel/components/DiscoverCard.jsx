@@ -2,7 +2,10 @@ import { Link } from "react-router-dom";
 
 const DiscoverCard = ({ info }) => {
   return (
-    <Link to={info.path} className="discover-card-link">
+    <Link
+      to={`/Japan-Travel-Reimagined${info.path}`}
+      className="discover-card-link"
+    >
       <div className="discover-card">
         <div className="discover-content">
           <h2 className="mb-4">{info.title}</h2>
