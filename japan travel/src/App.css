@@ -615,3 +615,8 @@ main.culturePage div button {
   background-color: var(--col-4);
   color: var(--col-2); /* Colore del testo per il corpo */
 }
+
+.custom-accordion-body img {
+  width: 50px;
+  height: 50px;
+}
