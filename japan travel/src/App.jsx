@@ -5,7 +5,7 @@ import HomePage from "../pages/Homepage";
 import RegionPage from "../pages/RegionPage";
 import DiscoverJapanPage from "../pages/DiscoverJapanPage";
 import PlanYourTripPage from "../pages/PlanYourTripPage";
-import CulturePage from "../pages/discoverJapanPages/CulturePage";
+import CulturePage from "../pages/discoverJapanPages/DiscoverJapanSubPage";
 import "./App.css";
 
 import HistoryPage from "../pages/discoverJapanPages/HystoryPage";
@@ -22,11 +22,12 @@ function App() {
           <Route path="/scopri-giappone" element={<DiscoverJapanPage />} />
           <Route path="/scopri-giappone/storia" element={<HistoryPage />} />
           <Route path="/scopri-giappone/cultura" element={<CulturePage />} />
-          <Route path="/scopri-giappone/cibo" element={<DiscoverJapanPage />} />
           <Route
-            path="/scopri-giappone/popculture"
-            element={<DiscoverJapanPage />}
+            path="/scopri-giappone/comportamento"
+            element={<CulturePage />}
           />
+          <Route path="/scopri-giappone/cibo" element={<CulturePage />} />
+          <Route path="/scopri-giappone/popculture" element={<CulturePage />} />
 
           {/* Rotta per la pagina di Pianificazione del Viaggio */}
           <Route path="/organizza-viaggio" element={<PlanYourTripPage />} />
