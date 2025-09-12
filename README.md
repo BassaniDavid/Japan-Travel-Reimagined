@@ -48,10 +48,11 @@ Questo è un elenco dei passaggi fondamentali per lo sviluppo del progetto. Puoi
 
 #### Fase 4: Sviluppo delle Pagine Interne
 
-- [ ] Creazione di una pagina `DiscoverJapanPage.jsx` con le informazioni generali su:
+- [x] Creazione di una pagina `DiscoverJapanPage.jsx` che rimanda alle seguenti pagine:
 
-  - [ ] Storia del Giappone
+  - [x] Storia del Giappone
   - [ ] Cultura e Tradizioni
+  - [ ] Etichetta e Comportamento
   - [ ] Cibo Giapponese
   - [ ] Pop Culture (Anime & Manga)
 

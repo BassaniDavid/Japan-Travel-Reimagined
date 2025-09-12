@@ -537,3 +537,81 @@ a.discover-card-link {
 .historical-card h2 {
   margin-bottom: 2rem;
 }
+
+/* culture page e card */
+.culturePage {
+  padding: 0 10vw;
+}
+
+main.culturePage div button {
+  background-color: var(--col-4);
+  color: var(--col-2);
+}
+
+/* Container principale */
+.custom-accordion-item {
+  border: 1px solid #dee2e6;
+  margin-bottom: calc(var(--margin-bottom) / 2);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.custom-accordion-button {
+  width: 100%;
+  padding: 16px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  text-align: left;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  font-size: calc(var(--font-h2) / 2);
+  color: #343a40; /* Colore del testo per il pulsante */
+}
+
+.custom-accordion-button:hover {
+  background-color: rgba(0, 142, 236, 0.815);
+}
+
+/* Freccia di apertura */
+.custom-accordion-button::after {
+  content: ""; /* Assicurati che non ci sia nessun testo */
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid var(--col-2);
+  border-bottom: 2px solid var(--col-2);
+  transform: translateY(-50%) rotate(45deg); /* Stato iniziale: freccia verso il basso */
+  transition: transform 0.3s ease-in-out;
+}
+
+.custom-accordion-button.collapsed::after {
+  /* Quando è collapsed, la freccia è verso il basso (angolo 45) */
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.custom-accordion-button.expanded::after {
+  /* Quando è expanded, la freccia è verso l'alto (angolo -135 o -45) */
+  transform: translateY(-50%) rotate(-135deg); /* O rotate(-45deg) a seconda del look desiderato */
+}
+
+/* Corpo dell'accordion */
+.custom-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.custom-accordion-content.show {
+  max-height: 100vh;
+}
+
+.custom-accordion-body {
+  padding: 16px;
+  background-color: var(--col-4);
+  color: var(--col-2); /* Colore del testo per il corpo */
+}
