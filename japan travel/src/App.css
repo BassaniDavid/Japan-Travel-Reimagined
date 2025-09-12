@@ -517,7 +517,8 @@ section.RegionPage > * {
 }
 
 .discover-card div.image-container {
-  width: 20%;
+  width: 20vw;
+  height: 20vw;
   border-radius: var(--radius-img);
   overflow: hidden;
 }
@@ -691,6 +692,21 @@ main.culturePage div button {
   #sun {
     display: none;
   }
+  .historical-card {
+    padding: 3rem 7rem;
+  }
+  .discover-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 2rem;
+  }
+  div.discover-content {
+    margin-bottom: 2rem;
+  }
+  .discover-card div.image-container {
+    width: 50vw;
+    height: 50vw;
+  }
 }
 @media (max-width: 768px) {
   :root {
@@ -738,6 +754,16 @@ main.culturePage div button {
   }
   #sun {
     display: none;
+  }
+  .historical-card {
+    padding: 3rem 3rem;
+  }
+  .discover-card div.image-container {
+    width: 60vw;
+    height: 60vw;
+  }
+  .discover-content {
+    width: 80%;
   }
 }
 
@@ -787,5 +813,15 @@ main.culturePage div button {
   }
   #sun {
     display: none;
+  }
+  .historical-card {
+    padding: 1rem 1rem;
+  }
+  .discover-content {
+    width: 100%;
+  }
+  .discover-card div.image-container {
+    width: 70vw;
+    height: 70vw;
   }
 }
