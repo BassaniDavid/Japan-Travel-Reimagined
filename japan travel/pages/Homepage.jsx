@@ -9,7 +9,7 @@ const Homepage = () => {
   const handleRegionClick = (regionId) => {
     const region = regionMapData[regionId];
     if (region) {
-      navigate(`/regioni/${region.title}`);
+      navigate(`/Japan-Travel-Reimagined/regioni/${region.title}`);
     }
   };
 
@@ -54,7 +54,7 @@ const Homepage = () => {
       {/* scopri il Giappone */}
       <section className="homepage DiscoverJapanPage">
         <div className=" p-5">
-          <Link to="/scopri-giappone">
+          <Link to="/Japan-Travel-Reimagined/scopri-giappone">
             <div className="d-flex align-items-center justify-content-around mb-4 flex-column flex-md-row">
               <h2>scopri il Giappone</h2>
               <img src="/img/homepage/japan.svg" alt="" />
@@ -87,7 +87,7 @@ const Homepage = () => {
       <section className="homepage PlanYourTripPage">
         <img className="" src="/img/homepage/japan-trip.jpg" alt="" />
         <div className=" p-5">
-          <Link to="/organizza-viaggio">
+          <Link to="/Japan-Travel-Reimagined/organizza-viaggio">
             <h2 className="mb-5">Programma il tuo viaggio</h2>
             <p>
               Pronto a partire per il Giappone? Qui troverai tutti gli strumenti
