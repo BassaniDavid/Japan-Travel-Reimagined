@@ -16,24 +16,45 @@ function App() {
       <Routes>
         <Route element={<DefaultLayout />}>
           {/* Rotta per l'Homepage */}
-          <Route path="/" element={<HomePage />} />
+          <Route path="/Japan-Travel-Reimagined/" element={<HomePage />} />
 
           {/* Rotte per le pagine di Scoperta del Giappone */}
-          <Route path="/scopri-giappone" element={<DiscoverJapanPage />} />
-          <Route path="/scopri-giappone/storia" element={<HistoryPage />} />
-          <Route path="/scopri-giappone/cultura" element={<CulturePage />} />
           <Route
-            path="/scopri-giappone/comportamento"
+            path="Japan-Travel-Reimagined/scopri-giappone"
+            element={<DiscoverJapanPage />}
+          />
+          <Route
+            path="Japan-Travel-Reimagined/scopri-giappone/storia"
+            element={<HistoryPage />}
+          />
+          <Route
+            path="Japan-Travel-Reimagined/scopri-giappone/cultura"
             element={<CulturePage />}
           />
-          <Route path="/scopri-giappone/cibo" element={<CulturePage />} />
-          <Route path="/scopri-giappone/popculture" element={<CulturePage />} />
+          <Route
+            path="Japan-Travel-Reimagined/scopri-giappone/comportamento"
+            element={<CulturePage />}
+          />
+          <Route
+            path="Japan-Travel-Reimagined/scopri-giappone/cibo"
+            element={<CulturePage />}
+          />
+          <Route
+            path="Japan-Travel-Reimagined/scopri-giappone/popculture"
+            element={<CulturePage />}
+          />
 
           {/* Rotta per la pagina di Pianificazione del Viaggio */}
-          <Route path="/organizza-viaggio" element={<PlanYourTripPage />} />
+          <Route
+            path="Japan-Travel-Reimagined/organizza-viaggio"
+            element={<PlanYourTripPage />}
+          />
 
           {/* Rotta dinamica per le pagine delle regioni */}
-          <Route path="/regioni/:regionName" element={<RegionPage />} />
+          <Route
+            path="Japan-Travel-Reimagined/regioni/:regionName"
+            element={<RegionPage />}
+          />
 
           {/* Rotta per gestire i casi di "pagina non trovata" */}
           <Route path="*" element={<h1>404: Pagina non trovata</h1>} />
