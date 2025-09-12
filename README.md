@@ -61,7 +61,7 @@ Questo è un elenco dei passaggi fondamentali per lo sviluppo del progetto. Puoi
   - [ ] Trasporti
   - [ ] Visti e Documenti
   - [ ] Budget e Consigli Utili
-- [x] Creazione di una pagina `RegionPage.jsx` generica, che fungerà da **template** per tutte le regioni. Questa pagina riceverà i dati della regione (es. Hokkaido, Kansai) tramite le rotte di React Router.
+- [ ] Creazione di una pagina `RegionPage.jsx` generica, che fungerà da **template** per tutte le regioni. Questa pagina riceverà i dati della regione (es. Hokkaido, Kansai) tramite le rotte di React Router.
 - [ ] Implementazione delle seguenti sezioni all'interno della pagina `RegionPage.jsx`:
 
   - [ ] **Storia e Cultura:** Dettagli sui luoghi storici, templi, tradizioni e festival unici della regione.
