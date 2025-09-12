@@ -13,7 +13,7 @@ const RegionMapCard = ({ details, onPrevClick, onNextClick }) => {
             <i className="bi bi-arrow-left"></i>
           </button>
           <Link to={`/Japan-Travel-Reimagined/regioni/${details.title}`}>
-            <img src={details.image} alt="" />
+            <img src={`/Japan-Travel-Reimagined${details.image}`} alt="" />
           </Link>
           <button onClick={onNextClick}>
             <i className="bi bi-arrow-right"></i>
