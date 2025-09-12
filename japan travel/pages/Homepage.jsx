@@ -55,7 +55,7 @@ const Homepage = () => {
       <section className="homepage DiscoverJapanPage">
         <div className=" p-5">
           <Link to="/scopri-giappone">
-            <div className="d-flex align-items-center justify-content-left mb-4">
+            <div className="d-flex align-items-center justify-content-around mb-4 flex-column flex-md-row">
               <h2>scopri il Giappone</h2>
               <img src="../img/homepage/japan.svg" alt="" />
             </div>
