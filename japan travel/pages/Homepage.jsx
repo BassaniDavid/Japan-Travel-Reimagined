@@ -57,7 +57,7 @@ const Homepage = () => {
           <Link to="/scopri-giappone">
             <div className="d-flex align-items-center justify-content-around mb-4 flex-column flex-md-row">
               <h2>scopri il Giappone</h2>
-              <img src="../img/homepage/japan.svg" alt="" />
+              <img src="/img/homepage/japan.svg" alt="" />
             </div>
             <p>
               Il Giappone è una terra di contrasti affascinanti, dove l'antica
@@ -71,21 +71,21 @@ const Homepage = () => {
         <img
           id="flower-1"
           className="flower"
-          src="../img/homepage/flower-1.svg"
+          src="/img/homepage/flower-1.svg"
           alt="flower"
         />
         <img
           id="flower-2"
           className="flower"
-          src="../img/homepage/flower-2.svg"
+          src="/img/homepage/flower-2.svg"
           alt="flower"
         />
-        <img className="" src="../img/homepage/japan.webp" alt="" />
+        <img className="" src="/img/homepage/japan.webp" alt="" />
       </section>
 
       {/* programma il tuo viaggio */}
       <section className="homepage PlanYourTripPage">
-        <img className="" src="../img/homepage/japan-trip.jpg" alt="" />
+        <img className="" src="/img/homepage/japan-trip.jpg" alt="" />
         <div className=" p-5">
           <Link to="/organizza-viaggio">
             <h2 className="mb-5">Programma il tuo viaggio</h2>
@@ -98,30 +98,26 @@ const Homepage = () => {
             <button className="fw-bold">Per saperne di più</button>
           </Link>
         </div>
-        <img
-          id="airplane"
-          src="../img/homepage/airplane-3.svg"
-          alt="airplane"
-        />
+        <img id="airplane" src="/img/homepage/airplane-3.svg" alt="airplane" />
         <img
           id="cloud-1"
           className="cloud"
-          src="../img/homepage/cloud-1.svg"
+          src="/img/homepage/cloud-1.svg"
           alt="cloud"
         />
         <img
           id="cloud-2"
           className="cloud"
-          src="../img/homepage/cloud-1.svg"
+          src="/img/homepage/cloud-1.svg"
           alt="cloud"
         />
         <img
           id="cloud-3"
           className="cloud"
-          src="../img/homepage/cloud-1.svg"
+          src="/img/homepage/cloud-1.svg"
           alt="cloud"
         />
-        <img className="sun" id="sun" src="../img/homepage/sun.svg" alt="sun" />
+        <img className="sun" id="sun" src="/img/homepage/sun.svg" alt="sun" />
       </section>
 
       {/* sezione con mappa interattiva */}
