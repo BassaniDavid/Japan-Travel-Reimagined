@@ -314,28 +314,28 @@ section.PlanYourTripPage img {
   background-color: rgba(0, 0, 0, 0);
   border-radius: 0;
   z-index: 1;
+  overflow: hidden;
   animation: fly 5s infinite linear,
     faid-in-svg var(--animation-svg) ease-in-out;
 }
 
 @keyframes fly {
   0% {
-    left: 40%;
+    translate: 0;
   }
   100% {
-    top: 5%;
-    left: 95%;
+    translate: 100vw -3vh;
   }
 }
 
 section.PlanYourTripPage img.cloud,
-section.PlanYourTripPage img.sun {
+#sun {
   position: absolute;
   border-radius: 0;
   z-index: 1;
 }
 
-section.PlanYourTripPage img.sun {
+#sun {
   top: 5%;
   right: 50%;
   width: 60px;
@@ -361,6 +361,7 @@ section.PlanYourTripPage img.sun {
   right: -18px;
   width: 120px;
   height: 120px;
+  overflow: hidden;
   animation: faid-in-svg var(--animation-svg) ease-in-out;
 }
 
@@ -369,6 +370,7 @@ section.PlanYourTripPage img.sun {
   right: 50%;
   width: 45px;
   height: 45px;
+  overflow: hidden;
   animation: cloud-2 calc(var(--animation-svg) / 2) infinite alternate
       ease-in-out,
     faid-in-svg var(--animation-svg) ease-in-out;
@@ -388,6 +390,7 @@ section.PlanYourTripPage img.sun {
   width: 26px;
   height: 26px;
   z-index: 3;
+  overflow: hidden;
   animation: cloud-3 6s infinite ease-in-out,
     faid-in-svg var(--animation-svg) ease-in-out;
 }
@@ -607,7 +610,7 @@ main.culturePage div button {
 }
 
 .custom-accordion-content.show {
-  max-height: 100vh;
+  max-height: 700vh;
 }
 
 .custom-accordion-body {
@@ -619,4 +622,97 @@ main.culturePage div button {
 .custom-accordion-body img {
   width: 50px;
   height: 50px;
+}
+
+/* media query */
+@media (max-width: 768px) {
+  :root {
+    --font-header: 1.8rem;
+    --font-h2: 3.5rem;
+    --font-p: 1.6rem;
+  }
+  section.homepage {
+    flex-direction: column;
+  }
+  section.homepage > div,
+  section.homepage img {
+    max-width: 100%;
+    border-radius: 0;
+    margin-top: 5vh;
+  }
+  section.RegionPage div.region-details {
+    width: 90%;
+  }
+  section.RegionPage .region-card img {
+    max-width: 70%;
+    max-height: 70%;
+  }
+  #airplane {
+    top: 55%;
+    left: 0%;
+    width: 60px;
+    height: 60px;
+  }
+  #cloud-1 {
+    display: none;
+  }
+
+  #cloud-2 {
+    display: none;
+  }
+
+  #cloud-3 {
+    top: 60%;
+    right: 40%;
+    width: 26px;
+    height: 26px;
+    z-index: 3;
+  }
+  #sun {
+    display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  :root {
+    --font-header: 1.3rem;
+    --font-h2: 3rem;
+    --font-p: 1.5rem;
+  }
+  header .header-logo {
+    width: calc(var(--header-size) / 2);
+    height: calc(var(--header-size) / 2);
+    border-radius: 1rem;
+    background-image: url(../img/logo-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 220%;
+  }
+  section.RegionPage div.map {
+    border-radius: 0;
+  }
+  #airplane {
+    top: 35%;
+    left: 0%;
+    width: 60px;
+    height: 60px;
+  }
+  #cloud-1 {
+    display: none;
+  }
+
+  #cloud-2 {
+    display: none;
+  }
+
+  #cloud-3 {
+    top: 35%;
+    right: 40%;
+    width: 26px;
+    height: 26px;
+    z-index: 3;
+  }
+  #sun {
+    display: none;
+  }
 }

@@ -121,7 +121,7 @@ const Homepage = () => {
           src="../img/homepage/cloud-1.svg"
           alt="cloud"
         />
-        <img className="sun" src="../img/homepage/sun.svg" alt="sun" />
+        <img className="sun" id="sun" src="../img/homepage/sun.svg" alt="sun" />
       </section>
 
       {/* sezione con mappa interattiva */}
