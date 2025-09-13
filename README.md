@@ -1,5 +1,7 @@
 ### README: Japan Travel Reimagined
 
+Puoi vedere lo stato di avanzamento del progetto a questo link: [japan travel Reimagined](https://bassanidavid.github.io/Japan-Travel-Reimagined/)
+
 ### Descrizione del Progetto 🗺️
 
 Questo progetto è una rielaborazione concettuale e tecnica del sito web ufficiale del turismo in Giappone, [japan.travel](https://www.japan.travel/it/it/). L'obiettivo principale è creare una piattaforma semplificata e più **accattivante e intuitiva** per i turisti, ponendo le **regioni come fulcro centrale dell'esplorazione**.
