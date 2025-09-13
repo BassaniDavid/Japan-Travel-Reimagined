@@ -13,24 +13,15 @@ import MainCard from "../../components/DiscoverJapanSubCard";
 
 const DiscoverJapanSubPage = () => {
   const pageData = {
-    "//bassanidavid.github.io/Japan-Travel-Reimagined/scopri-giappone/cultura":
-      culture,
-    "//bassanidavid.github.io/Japan-Travel-Reimagined/scopri-giappone/comportamento":
-      behavior,
-    "//bassanidavid.github.io/Japan-Travel-Reimagined/scopri-giappone/cibo":
-      food,
-    "//bassanidavid.github.io/Japan-Travel-Reimagined/organizza-viaggio/popculture":
-      popCulture,
-    "//bassanidavid.github.io/Japan-Travel-Reimagined/organizza-viaggio/alloggi":
-      accommodations,
-    "//bassanidavid.github.io/Japan-Travel-Reimagined/organizza-viaggio/trasporti":
-      transportation,
-    "//bassanidavid.github.io/Japan-Travel-Reimagined/organizza-viaggio/visti-e-documenti":
-      documents,
-    "//bassanidavid.github.io/Japan-Travel-Reimagined/organizza-viaggio/budget":
-      budget,
-    "//bassanidavid.github.io/Japan-Travel-Reimagined/organizza-viaggio/consigli-utili":
-      usefulTips,
+    "/Japan-Travel-Reimagined/scopri-giappone/cultura": culture,
+    "/Japan-Travel-Reimagined/scopri-giappone/comportamento": behavior,
+    "/Japan-Travel-Reimagined/scopri-giappone/cibo": food,
+    "/Japan-Travel-Reimagined/organizza-viaggio/popculture": popCulture,
+    "/Japan-Travel-Reimagined/organizza-viaggio/alloggi": accommodations,
+    "/Japan-Travel-Reimagined/organizza-viaggio/trasporti": transportation,
+    "/Japan-Travel-Reimagined/organizza-viaggio/visti-e-documenti": documents,
+    "/Japan-Travel-Reimagined/organizza-viaggio/budget": budget,
+    "/Japan-Travel-Reimagined/organizza-viaggio/consigli-utili": usefulTips,
   };
 
   const data = pageData[location.pathname] || [];
