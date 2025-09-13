@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import culture from "../../data/discoverJapanPage/culture";
 import behavior from "../../data/discoverJapanPage/behavior";
@@ -13,7 +13,6 @@ import usefulTips from "../../data/planYourTripPage/usefulTips";
 import MainCard from "../../components/DiscoverJapanSubCard";
 
 const DiscoverJapanSubPage = () => {
-  // Dichiarazione dell'oggetto pageData
   const pageData = {
     "/scopri-giappone/cultura": culture,
     "/scopri-giappone/comportamento": behavior,
@@ -27,9 +26,11 @@ const DiscoverJapanSubPage = () => {
   };
 
   const location = useLocation();
-  console.log(location.pathname);
+  const [data, setData] = useState([]);
 
-  const data = pageData[location.pathname] || [];
+  useEffect(() => {
+    setData(pageData[location.pathname] || []);
+  }, [location.pathname]);
 
   const [openCardId, setOpenCardId] = useState(null);
   const handleCardClick = (id) => {
