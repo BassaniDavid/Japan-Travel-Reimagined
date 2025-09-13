@@ -12,69 +12,39 @@ import HistoryPage from "../pages/discoverJapanPages/HystoryPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Japan-Travel-Reimagined">
       <Routes>
         <Route element={<DefaultLayout />}>
           {/* Rotta per l'Homepage */}
-          <Route path="/Japan-Travel-Reimagined/" element={<HomePage />} />
+          <Route path="/" element={<HomePage />} />
 
           {/* Rotte per le pagine di Scoperta del Giappone */}
+          <Route path="scopri-giappone" element={<DiscoverJapanPage />} />
+          <Route path="scopri-giappone/storia" element={<HistoryPage />} />
+          <Route path="scopri-giappone/cultura" element={<CulturePage />} />
           <Route
-            path="Japan-Travel-Reimagined/scopri-giappone"
-            element={<DiscoverJapanPage />}
-          />
-          <Route
-            path="Japan-Travel-Reimagined/scopri-giappone/storia"
-            element={<HistoryPage />}
-          />
-          <Route
-            path="Japan-Travel-Reimagined/scopri-giappone/cultura"
+            path="scopri-giappone/comportamento"
             element={<CulturePage />}
           />
-          <Route
-            path="Japan-Travel-Reimagined/scopri-giappone/comportamento"
-            element={<CulturePage />}
-          />
-          <Route
-            path="Japan-Travel-Reimagined/scopri-giappone/cibo"
-            element={<CulturePage />}
-          />
-          <Route
-            path="Japan-Travel-Reimagined/scopri-giappone/popculture"
-            element={<CulturePage />}
-          />
+          <Route path="scopri-giappone/cibo" element={<CulturePage />} />
+          <Route path="scopri-giappone/popculture" element={<CulturePage />} />
 
           {/* Rotte per le pagine di Pianificazione del Viaggio */}
+          <Route path="organizza-viaggio" element={<PlanYourTripPage />} />
+          <Route path="organizza-viaggio/alloggi" element={<CulturePage />} />
+          <Route path="organizza-viaggio/trasporti" element={<CulturePage />} />
           <Route
-            path="Japan-Travel-Reimagined/organizza-viaggio"
-            element={<PlanYourTripPage />}
-          />
-          <Route
-            path="Japan-Travel-Reimagined/organizza-viaggio/alloggi"
+            path="organizza-viaggio/visti-e-documenti"
             element={<CulturePage />}
           />
+          <Route path="organizza-viaggio/budget" element={<CulturePage />} />
           <Route
-            path="Japan-Travel-Reimagined/organizza-viaggio/trasporti"
-            element={<CulturePage />}
-          />
-          <Route
-            path="Japan-Travel-Reimagined/organizza-viaggio/visti-e-documenti"
-            element={<CulturePage />}
-          />
-          <Route
-            path="Japan-Travel-Reimagined/organizza-viaggio/budget"
-            element={<CulturePage />}
-          />
-          <Route
-            path="Japan-Travel-Reimagined/organizza-viaggio/consigli-utili"
+            path="organizza-viaggio/consigli-utili"
             element={<CulturePage />}
           />
 
           {/* Rotta dinamica per le pagine delle regioni */}
-          <Route
-            path="Japan-Travel-Reimagined/regioni/:regionName"
-            element={<RegionPage />}
-          />
+          <Route path="regioni/:regionName" element={<RegionPage />} />
 
           {/* Rotta per gestire i casi di "pagina non trovata" */}
           <Route path="*" element={<h1>404: Pagina non trovata</h1>} />
