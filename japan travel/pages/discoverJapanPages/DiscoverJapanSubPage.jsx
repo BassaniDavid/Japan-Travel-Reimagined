@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
-import culture from "../data/discoverJapanPage/culture";
-import behavior from "../data/discoverJapanPage/behavior";
-import food from "../data/discoverJapanPage/food";
-import popCulture from "../data/discoverJapanPage/popCulture";
-import MainCard from "../components/DiscoverJapanSubCard";
+import culture from "../../data/discoverJapanPage/culture";
+import behavior from "../../data/discoverJapanPage/behavior";
+import food from "../../data/discoverJapanPage/food";
+import popCulture from "../../data/discoverJapanPage/popCulture";
+import MainCard from "../../components/DiscoverJapanSubCard";
 
 const DiscoverJapanSubPage = () => {
   const pageData = {
