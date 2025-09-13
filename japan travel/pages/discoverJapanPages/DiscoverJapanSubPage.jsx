@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import culture from "../../data/discoverJapanPage/culture";
 import behavior from "../../data/discoverJapanPage/behavior";
 import food from "../../data/discoverJapanPage/food";
@@ -12,6 +13,7 @@ import usefulTips from "../../data/planYourTripPage/usefulTips";
 import MainCard from "../../components/DiscoverJapanSubCard";
 
 const DiscoverJapanSubPage = () => {
+  // Dichiarazione dell'oggetto pageData
   const pageData = {
     "/scopri-giappone/cultura": culture,
     "/scopri-giappone/comportamento": behavior,
@@ -24,6 +26,8 @@ const DiscoverJapanSubPage = () => {
     "/organizza-viaggio/consigli-utili": usefulTips,
   };
 
+  const location = useLocation();
+
   const data = pageData[location.pathname] || [];
 
   const [openCardId, setOpenCardId] = useState(null);
@@ -34,15 +38,19 @@ const DiscoverJapanSubPage = () => {
   return (
     <main className="DiscoverJapanSubPage">
       <div className="accordion">
-        {data.map((item, index) => (
-          <MainCard
-            key={index}
-            item={item}
-            id={index} // Passa l'ID al componente figlio
-            isOpen={openCardId === index} // Verifica se la tendina è quella aperta
-            onToggle={handleCardClick} // Passa la funzione per gestire il click
-          />
-        ))}
+        {data.length > 0 ? (
+          data.map((item, index) => (
+            <MainCard
+              key={index}
+              item={item}
+              id={index}
+              isOpen={openCardId === index}
+              onToggle={handleCardClick}
+            />
+          ))
+        ) : (
+          <div>Contenuto non trovato per questo percorso.</div>
+        )}
       </div>
     </main>
   );
