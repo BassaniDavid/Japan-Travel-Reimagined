@@ -661,6 +661,7 @@ main.DiscoverJapanSubPage div button {
     border-radius: 0;
     margin-top: 5vh;
   }
+
   section.RegionPage div.region-details {
     width: 90%;
   }
@@ -724,6 +725,13 @@ main.DiscoverJapanSubPage div button {
     max-width: 100%;
     border-radius: 0;
     margin-top: 5vh;
+  }
+  #japan-tori {
+    position: relative;
+    scale: 5;
+    top: -120px;
+    z-index: -1;
+    filter: opacity(0.15);
   }
   section.RegionPage div.region-details {
     width: 90%;

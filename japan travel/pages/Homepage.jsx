@@ -58,6 +58,7 @@ const Homepage = () => {
             <div className="d-flex align-items-center justify-content-around mb-4 flex-column flex-md-row">
               <h2>scopri il Giappone</h2>
               <img
+                id="japan-tori"
                 src="/Japan-Travel-Reimagined/img/homepage/japan.svg"
                 alt=""
               />
