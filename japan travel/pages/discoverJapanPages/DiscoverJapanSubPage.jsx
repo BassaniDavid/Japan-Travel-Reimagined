@@ -27,6 +27,7 @@ const DiscoverJapanSubPage = () => {
   };
 
   const location = useLocation();
+  console.log(location.pathname);
 
   const data = pageData[location.pathname] || [];
 
