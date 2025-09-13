@@ -6,12 +6,12 @@ import food from "../../data/discoverJapanPage/food";
 import popCulture from "../../data/discoverJapanPage/popCulture";
 import MainCard from "../../components/DiscoverJapanSubCard";
 
-const CulturePage = () => {
+const DiscoverJapanSubPage = () => {
   const pageData = {
-    "/scopri-giappone/cultura": culture,
-    "/scopri-giappone/comportamento": behavior,
-    "/scopri-giappone/cibo": food,
-    "/scopri-giappone/popculture": popCulture,
+    "/Japan-Travel-Reimagined/scopri-giappone/cultura": culture,
+    "/Japan-Travel-Reimagined/scopri-giappone/comportamento": behavior,
+    "/Japan-Travel-Reimagined/scopri-giappone/cibo": food,
+    "/Japan-Travel-Reimagined/scopri-giappone/popculture": popCulture,
   };
 
   const data = pageData[location.pathname] || [];
@@ -22,7 +22,7 @@ const CulturePage = () => {
   };
 
   return (
-    <main className="culturePage">
+    <main className="DiscoverJapanSubPage">
       <div className="accordion">
         {data.map((item, index) => (
           <MainCard
@@ -38,4 +38,4 @@ const CulturePage = () => {
   );
 };
 
-export default CulturePage;
+export default DiscoverJapanSubPage;

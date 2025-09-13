@@ -562,11 +562,11 @@ a.discover-card-link {
 }
 
 /* culture page e card */
-.culturePage {
+.DiscoverJapanSubPage {
   padding: 0 10vw;
 }
 
-main.culturePage div button {
+main.DiscoverJapanSubPage div button {
   background-color: var(--col-4);
   color: var(--col-2);
 }
