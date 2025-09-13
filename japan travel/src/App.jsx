@@ -51,23 +51,23 @@ function App() {
           />
           <Route
             path="Japan-Travel-Reimagined/organizza-viaggio/alloggi"
-            element={<PlanYourTripPage />}
+            element={<CulturePage />}
           />
           <Route
             path="Japan-Travel-Reimagined/organizza-viaggio/trasporti"
-            element={<PlanYourTripPage />}
+            element={<CulturePage />}
           />
           <Route
             path="Japan-Travel-Reimagined/organizza-viaggio/visti-e-documenti"
-            element={<PlanYourTripPage />}
+            element={<CulturePage />}
           />
           <Route
             path="Japan-Travel-Reimagined/organizza-viaggio/budget"
-            element={<PlanYourTripPage />}
+            element={<CulturePage />}
           />
           <Route
             path="Japan-Travel-Reimagined/organizza-viaggio/consigli-utili"
-            element={<PlanYourTripPage />}
+            element={<CulturePage />}
           />
 
           {/* Rotta dinamica per le pagine delle regioni */}
