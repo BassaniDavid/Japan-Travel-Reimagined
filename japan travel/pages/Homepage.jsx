@@ -54,7 +54,7 @@ const Homepage = () => {
       {/* scopri il Giappone */}
       <section className="homepage DiscoverJapanPage">
         <div className=" p-5">
-          <Link to="/Japan-Travel-Reimagined/scopri-giappone">
+          <Link to="/scopri-giappone">
             <div className="d-flex align-items-center justify-content-around mb-4 flex-column flex-md-row">
               <h2>scopri il Giappone</h2>
               <img
@@ -98,7 +98,7 @@ const Homepage = () => {
           alt=""
         />
         <div className=" p-5">
-          <Link to="/Japan-Travel-Reimagined/organizza-viaggio">
+          <Link to="/organizza-viaggio">
             <h2 className="mb-5">Programma il tuo viaggio</h2>
             <p>
               Pronto a partire per il Giappone? Qui troverai tutti gli strumenti

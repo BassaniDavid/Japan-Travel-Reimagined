@@ -3,12 +3,12 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <header className="container-fluid d-flex justify-content-around align-items-center sticky-top px-2">
-      <NavLink className="header-logo" to="/Japan-Travel-Reimagined/"></NavLink>
+      <NavLink className="header-logo" to="/"></NavLink>
       <div className="header-links d-none  d-sm-flex justify-content-around align-items-center">
-        <NavLink to="/Japan-Travel-Reimagined/scopri-giappone" className="">
+        <NavLink to="/scopri-giappone" className="">
           scopri il Giappone
         </NavLink>
-        <NavLink to="/Japan-Travel-Reimagined/organizza-viaggio" className="">
+        <NavLink to="/organizza-viaggio" className="">
           programma il tuo viaggio
         </NavLink>
       </div>
@@ -21,15 +21,12 @@ const Header = () => {
         ></button>
         <ul class="dropdown-menu">
           <li>
-            <NavLink to="/Japan-Travel-Reimagined/scopri-giappone" className="">
+            <NavLink to="/scopri-giappone" className="">
               scopri il Giappone
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/Japan-Travel-Reimagined/organizza-viaggio"
-              className=""
-            >
+            <NavLink to="/organizza-viaggio" className="">
               programma il tuo viaggio
             </NavLink>
           </li>
