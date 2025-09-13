@@ -44,9 +44,29 @@ function App() {
             element={<CulturePage />}
           />
 
-          {/* Rotta per la pagina di Pianificazione del Viaggio */}
+          {/* Rotte per le pagine di Pianificazione del Viaggio */}
           <Route
             path="Japan-Travel-Reimagined/organizza-viaggio"
+            element={<PlanYourTripPage />}
+          />
+          <Route
+            path="Japan-Travel-Reimagined/organizza-viaggio/alloggi"
+            element={<PlanYourTripPage />}
+          />
+          <Route
+            path="Japan-Travel-Reimagined/organizza-viaggio/trasporti"
+            element={<PlanYourTripPage />}
+          />
+          <Route
+            path="Japan-Travel-Reimagined/organizza-viaggio/visti-e-documenti"
+            element={<PlanYourTripPage />}
+          />
+          <Route
+            path="Japan-Travel-Reimagined/organizza-viaggio/budget"
+            element={<PlanYourTripPage />}
+          />
+          <Route
+            path="Japan-Travel-Reimagined/organizza-viaggio/consigli-utili"
             element={<PlanYourTripPage />}
           />
 
