@@ -15,15 +15,15 @@ import MainCard from "../../components/DiscoverJapanSubCard";
 const DiscoverJapanSubPage = () => {
   // Dichiarazione dell'oggetto pageData
   const pageData = {
-    "/scopri-giappone/cultura": culture,
-    "/scopri-giappone/comportamento": behavior,
-    "/scopri-giappone/cibo": food,
-    "/organizza-viaggio/popculture": popCulture,
-    "/organizza-viaggio/alloggi": accommodations,
-    "/organizza-viaggio/trasporti": transportation,
-    "/organizza-viaggio/visti-e-documenti": documents,
-    "/organizza-viaggio/budget": budget,
-    "/organizza-viaggio/consigli-utili": usefulTips,
+    "/Japan-Travel-Reimagined/scopri-giappone/cultura": culture,
+    "/Japan-Travel-Reimagined/scopri-giappone/comportamento": behavior,
+    "/Japan-Travel-Reimagined/scopri-giappone/cibo": food,
+    "/Japan-Travel-Reimagined/organizza-viaggio/popculture": popCulture,
+    "/Japan-Travel-Reimagined/organizza-viaggio/alloggi": accommodations,
+    "/Japan-Travel-Reimagined/organizza-viaggio/trasporti": transportation,
+    "/Japan-Travel-Reimagined/organizza-viaggio/visti-e-documenti": documents,
+    "/Japan-Travel-Reimagined/organizza-viaggio/budget": budget,
+    "/Japan-Travel-Reimagined/organizza-viaggio/consigli-utili": usefulTips,
   };
 
   const location = useLocation();
