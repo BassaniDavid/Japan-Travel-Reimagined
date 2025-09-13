@@ -7,10 +7,14 @@ import MainCard from "../../components/DiscoverJapanSubCard";
 
 const DiscoverJapanSubPage = () => {
   const pageData = {
-    "/Japan-Travel-Reimagined/scopri-giappone/cultura": culture,
-    "/Japan-Travel-Reimagined/scopri-giappone/comportamento": behavior,
-    "/Japan-Travel-Reimagined/scopri-giappone/cibo": food,
-    "/Japan-Travel-Reimagined/scopri-giappone/popculture": popCulture,
+    "//bassanidavid.github.io/Japan-Travel-Reimagined/scopri-giappone/cultura":
+      culture,
+    "//bassanidavid.github.io/Japan-Travel-Reimagined/scopri-giappone/comportamento":
+      behavior,
+    "//bassanidavid.github.io/Japan-Travel-Reimagined/scopri-giappone/cibo":
+      food,
+    "//bassanidavid.github.io/Japan-Travel-Reimagined/scopri-giappone/popculture":
+      popCulture,
   };
 
   const data = pageData[location.pathname] || [];
