@@ -644,6 +644,14 @@ main.DiscoverJapanSubPage div button {
   height: 50px;
 }
 
+/* regionpage */
+
+.regionPage h1 {
+  font-size: calc(var(--font-h2) * 2);
+  text-align: center;
+  font-weight: 900;
+}
+
 /* media query */
 @media (max-width: 992px) {
   :root {
