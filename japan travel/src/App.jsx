@@ -5,7 +5,7 @@ import HomePage from "../pages/Homepage";
 import RegionPage from "../pages/RegionPage";
 import DiscoverJapanPage from "../pages/DiscoverJapanPage";
 import PlanYourTripPage from "../pages/PlanYourTripPage";
-import CulturePage from "../pages/discoverJapanPages/DiscoverJapanSubPage";
+import DiscoverJapanSubPage from "../pages/discoverJapanPages/DiscoverJapanSubPage";
 import "./App.css";
 
 import HistoryPage from "../pages/discoverJapanPages/HystoryPage";
@@ -21,30 +21,48 @@ function App() {
           {/* Rotte per le pagine di Scoperta del Giappone */}
           <Route path="scopri-giappone" element={<DiscoverJapanPage />} />
           <Route path="scopri-giappone/storia" element={<HistoryPage />} />
-          <Route path="scopri-giappone/cultura" element={<CulturePage />} />
+          <Route
+            path="scopri-giappone/cultura"
+            element={<DiscoverJapanSubPage />}
+          />
           <Route
             path="scopri-giappone/comportamento"
-            element={<CulturePage />}
+            element={<DiscoverJapanSubPage />}
           />
-          <Route path="scopri-giappone/cibo" element={<CulturePage />} />
-          <Route path="scopri-giappone/popculture" element={<CulturePage />} />
+          <Route
+            path="scopri-giappone/cibo"
+            element={<DiscoverJapanSubPage />}
+          />
+          <Route
+            path="scopri-giappone/popculture"
+            element={<DiscoverJapanSubPage />}
+          />
 
           {/* Rotte per le pagine di Pianificazione del Viaggio */}
           <Route path="organizza-viaggio" element={<PlanYourTripPage />} />
-          <Route path="organizza-viaggio/alloggi" element={<CulturePage />} />
-          <Route path="organizza-viaggio/trasporti" element={<CulturePage />} />
+          <Route
+            path="organizza-viaggio/alloggi"
+            element={<DiscoverJapanSubPage />}
+          />
+          <Route
+            path="organizza-viaggio/trasporti"
+            element={<DiscoverJapanSubPage />}
+          />
           <Route
             path="organizza-viaggio/visti-e-documenti"
-            element={<CulturePage />}
+            element={<DiscoverJapanSubPage />}
           />
-          <Route path="organizza-viaggio/budget" element={<CulturePage />} />
+          <Route
+            path="organizza-viaggio/budget"
+            element={<DiscoverJapanSubPage />}
+          />
           <Route
             path="organizza-viaggio/consigli-utili"
-            element={<CulturePage />}
+            element={<DiscoverJapanSubPage />}
           />
 
           {/* Rotta dinamica per le pagine delle regioni */}
-          <Route path="regioni/:regionName" element={<RegionPage />} />
+          <Route path="/:regionName" element={<RegionPage />} />
 
           {/* Rotta per gestire i casi di "pagina non trovata" */}
           <Route path="*" element={<h1>404: Pagina non trovata</h1>} />

@@ -58,11 +58,11 @@ Questo è un elenco dei passaggi fondamentali per lo sviluppo del progetto. Puoi
   - [x] Cibo Giapponese
   - [x] Pop Culture (Anime & Manga)
 
-- [ ] Creazione di una pagina `PlanYourTripPage.jsx` con i consigli pratici su:
-  - [ ] Alloggi
-  - [ ] Trasporti
-  - [ ] Visti e Documenti
-  - [ ] Budget e Consigli Utili
+- [x] Creazione di una pagina `PlanYourTripPage.jsx` con i consigli pratici su:
+  - [x] Alloggi
+  - [x] Trasporti
+  - [x] Visti e Documenti
+  - [x] Budget e Consigli Utili
 - [ ] Creazione di una pagina `RegionPage.jsx` generica, che fungerà da **template** per tutte le regioni. Questa pagina riceverà i dati della regione (es. Hokkaido, Kansai) tramite le rotte di React Router.
 - [ ] Implementazione delle seguenti sezioni all'interno della pagina `RegionPage.jsx`:
 

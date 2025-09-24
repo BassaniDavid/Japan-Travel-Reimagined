@@ -12,14 +12,14 @@ const Header = () => {
           programma il tuo viaggio
         </NavLink>
       </div>
-      <div class="dropdown hamburger-menu">
+      <div className="dropdown hamburger-menu">
         <button
-          class="button dropdown-toggle"
+          className="button dropdown-toggle"
           type="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
         ></button>
-        <ul class="dropdown-menu">
+        <ul className="dropdown-menu">
           <li>
             <NavLink to="/scopri-giappone" className="">
               scopri il Giappone
